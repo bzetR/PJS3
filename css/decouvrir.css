@@ -1,0 +1,67 @@
+@import url(http://fr.allfont.net/allfont.css?fonts=courier-new);
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.banniere {
+	width: 100%;
+	height: 462px;
+	max-height: 462px;
+	margin-left: -8px;
+}
+
+.banniere img {
+	max-height: 462px;
+	width: 100%
+}
+
+.citation {
+	width: 66%;
+	height: 349px;
+	margin: auto;
+	font-family: Georgia;
+}
+
+#phrase{
+	text-align: justify;
+	font-size: 56px;
+	font-style: italic;
+	color: #2A2A2A;
+	word-spacing: 10px;
+}
+
+.decouvrir {
+	width: 66%;
+	margin: auto;
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: 650px 1fr;
+}
+
+.titre {
+	font-size: 40px;
+	color: #726277;
+	font-family: Impact;
+}
+
+.description {
+	font-size: 18px;
+	font-family: "Courier New";
+	color: #726277;
+}
+
+#img-decouvrir {
+	max-height: 220px;
+	grid-row: 1 / span 2 ;
+	grid-column: 2;
+	align-self: center;
+	justify-align : center;
+	padding-top: 40px;
+}

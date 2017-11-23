@@ -1,0 +1,87 @@
+@import url(http://fr.allfont.net/allfont.css?fonts=courier-new);
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.banniere {
+	width: 100%;
+	height: 462px;
+	max-height: 462px;
+	margin-left: -8px;
+}
+
+.banniere img {
+	max-height: 462px;
+	width: 100%
+}
+
+.actualite {
+	margin: auto;
+	width: 66%;
+	display: grid;
+	grid-template-columns: 747px 230px;
+	grid-template-rows: repeat(4, auto);
+}
+
+.btn-actualite {
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 12px;
+  background: #85A1D6;
+  display: block;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition-duration: 0.4s;
+  vertical-align: middle;
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.btn-actualite:hover {
+  background: #CABDCD;
+  text-decoration: none;
+}
+
+#actualite-titre {
+	font-size: 40px;
+	color: #726277;
+	font-family: Impact;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#actualite-date {
+	font-size: 18px;
+	font-family: "Courier New";
+	grid-column: 1;
+	grid-row: 2;
+}
+
+#actualite-description {
+	font-size: 14px;
+	font-family: "Courier New";
+	color: #726277;
+	grid-column: 1;
+	grid-row: 3;
+}
+
+#actualite-lien {
+	grid-column: 2;
+	grid-row: 1 / span 4;
+	align-self: center;
+	justify-align : center;
+}
