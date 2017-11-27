@@ -8,12 +8,18 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./css/accueil.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css">
   </head>
 
   <body>
     <section class = "main">
       <div class = "banniere">
-        <img src="./img/banniere_accueil_1.jpg">
+        <div class="single-item">
+          <div><img src="./img/banniere_accueil_1.jpg"></div>
+          <div><img src="./img/banniere_accueil_2.jpg"></div>
+          <div><img src="./img/banniere_accueil_3.jpg"></div>
+        </div>
       </div>
 
       <div class = "citation">
@@ -49,6 +55,12 @@
         </a>
       </div>
   </section>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./css/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">$(".single-item").slick({
+  dots: true
+});</script>
 
   </body>
 
