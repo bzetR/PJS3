@@ -1,0 +1,17 @@
+HTML : 
+
+<img src="https://www.google.fr/images/srpr/logo11w.png" alt="" id="image"/>
+
+
+CSS :
+
+#image
+{
+    opacity:0.1;
+    transition:.8s opacity linear;
+}
+#image:hover
+{
+    opacity:1.0;
+    transition:.4s opacity linear;
+}
