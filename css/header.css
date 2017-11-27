@@ -1,8 +1,7 @@
-body {
-    padding: 0;
-    margin: 0;
+body, nav > ul{
+    margin: 0px;
+    padding:0px;
 }
-
 .header{
     display: grid;
     grid-template-columns : 17% 25% 50%;
@@ -10,17 +9,12 @@ body {
     justify-items :start;
     border : solid black 1px;
 }
-
 #logo{
-    height: 90%;
-    width: 55%;
+    height: 103px;
+    width: 197px;
+    max-height: 103px;
+    max-width: 197px;
 }
-nav a{
-    text-decoration: none;
-    font-size: 13px;
-    font-family: 'Raleway', sans-serif;
-}
-
 nav{
     margin-top: 30px;
     height: 48px;
@@ -29,7 +23,26 @@ nav{
     box-shadow: 0px 1px 4px;
     margin-left: 40px;
 }
-.cacher > li:hover a{
+nav a{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+}
+nav li{
+    list-style-type: none;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.submenu > li:hover a{
     color: white;
 }
 .navigation > li:hover > a{
@@ -44,7 +57,7 @@ nav{
 .active{
     cursor: pointer;
 }
-.navigation >li{
+.navigation > li{
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 38px;
@@ -68,42 +81,60 @@ nav{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-.navigation{
-    margin: 0;
-    padding:0;
-    display: flex;
-    list-style-type: none;
-}
 .active{
     background-color: #4d7dd6;
 }
-
-.Aderouler:hover .cacher{
-    left: 53%;
-    top: 9%;
+.submenu{
+    display: none;
 }
-.cacher{
-    list-style-type: none;
+
+nav li:hover .submenu{
+    display: inline-block;
     position: absolute;
-    height: 100px;
-    left: -999em;
-    padding: 0;
-    margin: 0;
-    padding-top: 20px;
-    display: block;
+    top: 102%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
     text-align: center;
 }
-.cacher > :first-child{
+.submenu > :first-child{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
-.cacher > :last-child{
+.submenu > :last-child{
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
-.cacher li{
+.submenu li{
     border :0px!important;
     box-shadow: 0px 1px 4px;
     background-color: white;
     padding: 5px 39px 5px 39px;
+}
+
+@media screen and (max-width: 1250px) {
+    .header{
+        display: grid;
+        grid-template-columns : 1% 25% 75%;
+        grid-template-rows : 110px;
+        border: 0px;
+    }
+    .inutile{
+        display: none;
+    }
+}
+@media screen and (max-width: 835px) {
+    .header{
+        display: grid;
+        grid-template-columns : 1% 25% 75%;
+        grid-template-rows : 110px;
+    }
+    .navigation > li{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: solid 1px grey;
+    }
+    .submenu li{
+    padding: 5px 15px 5px 15px;
+}
 }

@@ -1,0 +1,94 @@
+@import url(http://fr.allfont.net/allfont.css?fonts=courier-new);
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.contact {
+	display: grid;
+	margin: auto;
+	width: 66%;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(2, auto);
+	grid-auto-flow: row;
+	justify-content: space-between;
+}
+
+.information {
+	background-color: #F8F5EF;
+	grid-column: 1;
+	grid-row: 1;
+	align-self: center;
+	font-family: "Courier New";
+	font-size: 18px;
+	max-width: 380px;
+	max-height: 280px;
+	padding: 5px 20px;
+
+}
+
+.information h3{
+	color: #4D7DD6;
+	font-family: "Comic sans ms";
+	font-size: 29px;
+}
+
+.map {
+	grid-column: 2;
+	grid-row: 1;
+	height: 280px;
+	width: 550px;
+}
+
+.map iframe {
+	border: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.formulaire {
+	grid-column: 1 / span 2;
+	grid-row: 2;
+	justify-self : center;	
+	font-family: "Courier New";
+	width: 100%;
+	margin-top: 4%;
+}
+
+.formulaire form {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	justify-content: start;
+}
+
+.formulaire input, .formulaire textarea {
+	grid-column: 2;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+	border: none;
+	border: 0px solid rgba(214, 16, 67, 1);
+	margin-bottom: 10px;
+	height: 35px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.formulaire textarea {
+	height: 100px;
+}
+
+.formulaire input[type=submit] {
+	justify-self:end;
+	width: 80px;
+	font-family: "Courier New";
+	background-color: #F8F5EF;
+	font-size: 16px;
+	padding: 5px 0;
+}
+
+.formulaire legend {
+	grid-column: 1;
+	justify-self:end;
+	margin-right: 0.75em;
+}

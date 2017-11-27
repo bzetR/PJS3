@@ -1,0 +1,127 @@
+@import url(http://fr.allfont.net/allfont.css?fonts=courier-new);
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.banniere {
+	width: 100%;
+	height: 462px;
+	max-height: 462px;
+	margin-left: -8px;
+}
+
+.banniere img {
+	max-height: 462px;
+	width: 100%
+}
+
+.citation {
+	width: 66%;
+	height: 349px;
+	margin: auto;
+	font-family: Georgia;
+}
+
+#phrase{
+	text-align: justify;
+	font-size: 56px;
+	font-style: italic;
+	color: #2A2A2A;
+	word-spacing: 10px;
+}
+
+#auteur{
+	text-align: right;
+	font-size: 35px;
+	font-weight: bold;
+	color: #827F7F;
+}
+
+.titre {
+	font-size: 40px;
+	color: #726277;
+	font-family: Impact;
+}
+
+.gastronomie {
+	width: 66%;
+	margin: auto;
+}
+
+.gastronomie a:hover {
+}
+
+.gastronomie-plats {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-template-rows: repeat(4, auto);
+	justify-content: space-between;
+	height: 550px;
+}
+
+.gastronomie-plats img, .gastronomie-produits img {
+	height: 98%;
+	width: 98%;
+}
+
+#gastronomie-plats-1 {
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 3;
+}
+
+#gastronomie-plats-2 {
+	grid-column: 4 / span 2;
+	grid-row: 1 / span 2;
+}
+
+#gastronomie-plats-3 {
+	grid-column: 1 / span 2;
+	grid-row: 4;
+}
+
+#gastronomie-plats-4 {
+	grid-column: 3;
+	grid-row: 4;
+}
+
+#gastronomie-plats-5 {
+	grid-column: 4 / span 2;
+	grid-row: 3 / span 2;
+}
+
+.gastronomie-produits {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(4, 25%);
+	justify-content: space-between;
+	height: 800px;
+}
+
+#gastronomie-prod-1{
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#gastronomie-prod-2 {
+	grid-column: 2 / span 2;
+	grid-row: 1;
+}
+
+#gastronomie-prod-3 {
+	grid-column: 1 / span 3;
+	grid-row: 2 / span 3;
+}
+
+.restaurant img {
+	max-height: 450px;
+	width: 85%;
+}
